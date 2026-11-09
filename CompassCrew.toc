@@ -1,0 +1,16 @@
+## Interface: 16001
+## Title: Compass Crew
+## Notes: See your party on your Wayfinder compass, minimap and world map as class icons, target markers or portraits.
+## Author: Ryan
+## Version: @project-version@
+## Category: Map & Minimap
+## Dependencies: Wayfinder
+## OptionalDeps: OpenMap
+## SavedVariables: CompassCrewDB
+## IconTexture: Interface\AddOns\CompassCrew\Media\Icon
+## X-Curse-Project-ID: 1794171
+
+Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
+CompassCrew.lua
+Maps.lua
+Options.lua

@@ -1,0 +1,8 @@
+{
+  "name": "compasscrew",
+  "version": "1.7.2",
+  "private": true,
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
+  }
+}

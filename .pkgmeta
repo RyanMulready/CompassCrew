@@ -1,0 +1,25 @@
+package-as: CompassCrew
+
+externals:
+  Libs/HereBeDragons:
+    url: https://github.com/Nevcairiel/HereBeDragons
+    tag: latest
+
+manual-changelog:
+  filename: RELEASE_NOTES.md
+  markup-type: markdown
+
+ignore:
+  - art
+  - Media/Icon.svg
+  - Media/Icon.png
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
+  - package.json
+  - package-lock.json
+
+required-dependencies:
+  - wayfinder
+
+optional-dependencies:
+  - openmap

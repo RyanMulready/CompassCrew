@@ -1,0 +1,7 @@
+.env
+.release/
+node_modules/
+# Written by the release workflow from CHANGELOG.md
+RELEASE_NOTES.md
+# Fetched by the packager (see .pkgmeta)
+Libs/HereBeDragons/

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="bg" cx="60" cy="58" r="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#382d25"/>
+      <stop offset="0.5" stop-color="#32281f"/>
+      <stop offset="1" stop-color="#211a15"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdd472"/>
+      <stop offset="0.3" stop-color="#f6bf50"/>
+      <stop offset="0.5" stop-color="#e7a22d"/>
+      <stop offset="0.72" stop-color="#bf7f1f"/>
+      <stop offset="1" stop-color="#8f5a14"/>
+    </linearGradient>
+    <linearGradient id="bracket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4ca7e"/>
+      <stop offset="0.5" stop-color="#d2942a"/>
+      <stop offset="1" stop-color="#7a4a12"/>
+    </linearGradient>
+    <radialGradient id="dial" cx="60" cy="54" r="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a4858"/>
+      <stop offset="0.32" stop-color="#2f3c4a"/>
+      <stop offset="0.6" stop-color="#26313d"/>
+      <stop offset="1" stop-color="#1a222c"/>
+    </radialGradient>
+    <linearGradient id="band" x1="26" y1="0" x2="102" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11171f"/>
+      <stop offset="0.42" stop-color="#171f28"/>
+      <stop offset="1" stop-color="#10161e"/>
+    </linearGradient>
+    <clipPath id="face">
+      <circle cx="64" cy="64" r="37.5"/>
+    </clipPath>
+    <g id="person" fill="#000" fill-opacity="0.5">
+      <circle cy="-1" r="1.35"/>
+      <path d="M-2.9 3a2.9 1.65 0 0 1 5.8 0z"/>
+    </g>
+  </defs>
+
+  <!-- Backplate -->
+  <rect width="128" height="128" rx="8" fill="url(#bg)"/>
+  <rect x="2.5" y="2.5" width="123" height="123" rx="5.5" fill="none" stroke="#15110e"/>
+
+  <!-- Dial with the compass strip -->
+  <circle cx="64" cy="64" r="37.5" fill="url(#dial)"/>
+  <g clip-path="url(#face)">
+    <rect x="26" y="55.5" width="76" height="17" fill="url(#band)"/>
+    <g fill="#7d6d4d">
+      <rect x="27" y="66" width="2" height="6.5"/>
+      <rect x="33" y="70" width="2" height="2.5"/>
+      <rect x="39" y="70" width="2" height="2.5"/>
+      <rect x="45" y="66" width="2" height="6.5"/>
+      <rect x="51" y="70" width="2" height="2.5"/>
+      <rect x="57" y="70" width="2" height="2.5"/>
+      <rect x="69" y="70" width="2" height="2.5"/>
+      <rect x="75" y="70" width="2" height="2.5"/>
+      <rect x="81" y="66" width="2" height="6.5"/>
+      <rect x="87" y="70" width="2" height="2.5"/>
+      <rect x="93" y="70" width="2" height="2.5"/>
+      <rect x="99" y="66" width="2" height="6.5"/>
+    </g>
+  </g>
+  <rect x="63" y="54" width="2" height="19.5" fill="#8b8975"/>
+  <rect x="63" y="66" width="2" height="6.5" fill="#bfb18a"/>
+
+  <!-- Party members: mage, druid, priest -->
+  <g transform="translate(41 63)">
+    <circle r="5.6" fill="#3fc7eb" stroke="url(#gold)" stroke-width="1.2"/>
+    <use xlink:href="#person"/>
+  </g>
+  <g transform="translate(71.5 63)">
+    <circle r="5.6" fill="#ff7c0a" stroke="url(#gold)" stroke-width="1.2"/>
+    <use xlink:href="#person"/>
+  </g>
+  <g transform="translate(90 63)">
+    <circle r="5.6" fill="#f2f2f2" stroke="url(#gold)" stroke-width="1.2"/>
+    <use xlink:href="#person"/>
+  </g>
+
+  <!-- N -->
+  <path fill="#ffe9a8" d="M58.8 38.9h2.8l6.8 9.8H66zM59.7 38.6h.6v10h-.6zM67.7 38.6h.6v10.1h-.6zM58.2 38.6h3.6v.6h-3.6zM66.2 38.6h3.6v.6h-3.6zM58.2 48.1h3.6v.6h-3.6z"/>
+
+  <!-- Bezel -->
+  <circle cx="64" cy="64" r="40.75" fill="none" stroke="url(#gold)" stroke-width="6.5"/>
+  <circle cx="64" cy="64" r="42.6" fill="none" stroke="#000" stroke-opacity="0.3" stroke-width="0.9"/>
+  <circle cx="64" cy="64" r="38.6" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1"/>
+  <g fill="#ffeab0" fill-opacity="0.85">
+    <circle cx="48.31" cy="26.12" r="1.1"/>
+    <circle cx="79.69" cy="26.12" r="1.1"/>
+    <circle cx="101.88" cy="48.31" r="1.1"/>
+    <circle cx="101.88" cy="79.69" r="1.1"/>
+    <circle cx="79.69" cy="101.88" r="1.1"/>
+    <circle cx="48.31" cy="101.88" r="1.1"/>
+    <circle cx="26.12" cy="79.69" r="1.1"/>
+    <circle cx="26.12" cy="48.31" r="1.1"/>
+  </g>
+
+  <!-- Direction arrows -->
+  <g fill="url(#gold)">
+    <path d="M64 5.3l8 9.2H56z"/>
+    <path d="M64 122.7l8-9.2H56z"/>
+    <path d="M5.3 64l9.2-8v16z"/>
+    <path d="M122.7 64l-9.2-8v16z"/>
+  </g>
+
+  <!-- Corner brackets -->
+  <g fill="none" stroke="url(#bracket)" stroke-width="2">
+    <path d="M7 22.6V7h15.6"/>
+    <path d="M105.4 7H121v15.6"/>
+    <path d="M7 105.4V121h15.6"/>
+    <path d="M105.4 121H121v-15.6"/>
+  </g>
+  <g fill="url(#gold)">
+    <circle cx="10.5" cy="10.5" r="1.5"/>
+    <circle cx="117.5" cy="10.5" r="1.5"/>
+    <circle cx="10.5" cy="117.5" r="1.5"/>
+    <circle cx="117.5" cy="117.5" r="1.5"/>
+  </g>
+</svg>
